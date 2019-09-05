@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chocolate Survey</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+		<header class="container">
+    <div class="row">
+      <h1 id="title" class="col-sm-6">
+        Chocolate Survey
+      </h1>
+      </div>
+      </header>
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row">
+        <h2 id="description" class="text-left">A Survey About The Personal Prefrences Of Chocolate
+        </h2>
+        </div>
+        </div>
+      </section>
+      
+    <section>
+      <div class="container">
+        <div class="row">
+          <form id="survey-form" action="/https://docs.google.com/spreadsheets/d/1MvmB3P1wbc1i47lwuUQ3VikCpJ8hOIx32xgBhv2oX9A/edit?usp=sharing">
+              <div class="col-sm-10">
+              <div>
+              <label for="name" id="name-label"><h3>Full Name</h3>
+              <input id="name" type="text" placeholder="Please Enter Your Name" required>
+                  </label>
+                  </div>
+                  <div>
+              <label for="email" id="email-label"><h3>Email Address</h3>
+              <input id="email" type="text" placeholder="Please Enter Your Email" required>
+                      </label>
+                  </div>
+              <div>
+                  <label for="number" id="number-label"><h3>Age</h3>
+                  <input id="number" type="value" placeholder="Please Enter Your Age" required min="0" max="130">
+                  </label>
+                      </div>
+                  <div>
+              <h3>Gender</h3>
+                      <div class="dropdown" id="dropdown">
+                          <button class="dropbtn">Select One Below</button>
+                          <div class="dropdown-content">
+                  <label for="male"><input id="male" type="radio" name="Gender" checked>Male</label>
+                  <label for="female"><input id="female" type="radio" name="Gender">Female</label>
+                  <label for="other"><input id="other" type="radio" name="Gender">Other</label>
+                      </div>
+                      </div>
+              <div id=What-Type-Of-Chocolate required>
+              <h3>What Type(s) Of Chocolate Do You Like</h3>
+                  <div>
+                  <label for="white"><input id="white" type="checkbox" name="What-Type-Of-Chocolate" checked>White</label>
+                  </div>
+                  <div>
+                  <label for="milk"><input id="milk" type="checkbox" name="What-Type-Of-Chocolate">Milk</label>
+                  </div>
+                  <div>
+                  <label for="dark"><input id="dark" type="checkbox" name="What-Type-Of-Chocolate">Dark</label>
+                  </div>
+                  <div>
+                  <label for="none"><input id="none" type="checkbox" name="What-Type-Of-Chocolate">I Don't Like Chocolate</label>
+                  </div>
+              </div>
+              <div>
+                  <h3>Favourite Brand(s) Of Chocolate</h3>
+              <input type="text" placeholder="Please Enter Your Response" name="Favourite-Brand(s)">
+              </div>
+              <div>
+                  <h3>Why?</h3>
+             <textarea></textarea> 
+              </div>
+            <div>
+                  <h3>Rate The Following Brands 1-10</h3>
+                <p><i>(1 being the worst and 10 being the best)</i></p>
+                <div>
+                 <label for="cadbury" id="cadbury-label"><h5>Cadbury</h5>
+                  <input id="cadbury" type="number" placeholder="1" required min="1" max="10">
+                  </label>   
+                </div>
+                <div>
+                 <label for="galaxy" id="galaxy-label"><h5>Galaxy</h5>
+                  <input id="galaxy" type="number" placeholder="1" required min="1" max="10">
+                  </label>   
+                </div>
+                <div>
+                 <label for="kinder" id="kinder-label"><h5>Kinder</h5>
+                  <input id="kinder" type="number" placeholder="1" required min="1" max="10">
+                  </label>   
+                </div>
+                <div>
+                 <label for="thorntons" id="thorntons-label"><h5>Thorntons</h5>
+                  <input id="thorntons" type="number" placeholder="1" required min="1" max="10">
+                  </label>   
+                </div>
+                <div>
+                 <label for="ferro" id="ferro-label"><h5>Ferro Rocher</h5>
+                  <input id="ferro" type="number" placeholder="1" required min="1" max="10">
+                  </label>   
+                </div>
+                  </div>
+              <button id="submit" type="submit">Submit Survey</button>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    
+      
+      <footer class="container">
+      <div class="row">
+        <p class="col-sm-4">&copy 2019 Caitlin Caine
+        </p>
+        <div class="col-sm-2">
+           <a href="https://github.com/CaiaPls" target="Github">Github</a>
+        </div>
+        <div class="col-sm-2">
+           <a href="https://www.linkedin.com/in/caitlin-caine/" target="LinkedIn">LinkedIn</a>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>
